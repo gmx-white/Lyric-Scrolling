@@ -2,7 +2,7 @@
  * @Author: gmx
  * @Date: 2023-04-28 13:09:14
  * @LastEditors: gmx
- * @LastEditTime: 2023-05-17 21:30:11
+ * @LastEditTime: 2023-05-18 13:34:31
  * @Description:
  * @Version: 1.0
  */
@@ -104,8 +104,8 @@ doms.audio.addEventListener("timeupdate", setOffset);
 // 画布
 const WIDTH = 360;
 const HEIGHT = 100;
-// var canvas = document.querySelector("#audio");
-// var ctx = canvas.getContext("2d");
+var canvas = document.querySelector("#audio");
+var ctx = canvas.getContext("2d");
 function draw(dataArray, maxValue) {
   ctx.fillStyle = "rgb(0,0,0)";
   ctx.fillRect(0, 0, WIDTH, HEIGHT);
